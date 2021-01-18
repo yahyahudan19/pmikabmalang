@@ -245,7 +245,7 @@
     // Sticky Header
     if($('.sticky-header').length){
       var windowpos = $(this).scrollTop();
-      if (windowpos >= 80) {
+      if (windowpos >= 30) {
         $('.sticky-header').addClass('sticky');
       } else {
         $('.sticky-header').removeClass('sticky');
