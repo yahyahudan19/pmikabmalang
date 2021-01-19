@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Mexi – Health & Medical HTML Template</title>
+    <title>Hope – Health & Medical HTML5 Template</title>
 
     <!--== Favicon ==-->
     <link
@@ -37,7 +37,7 @@
       <!--== Start Header Wrapper ==-->
       <header class="header">
         <!-- header-top start -->
-        <div class="header-top">
+        <div class="header-top d-none d-lg-block">
           <div class="container">
             <div class="row row-cols-2">
               <div class="col">
@@ -70,18 +70,22 @@
         </div>
         <!-- header-top end -->
 
-        <!-- header-bottom start -->
-        <div class="header-middle">
+        <!-- header-middle start -->
+        <div class="header-middle mobile-sticky">
           <div class="container">
             <div class="row">
               <div class="col-12">
                 <div class="header-middle-content">
                   <div class="header-logo">
                     <a href="index.html">
-                      <img src="assets/img/logo.png" alt="Logo" />
+                      <img
+                        class="sticky-img"
+                        src="assets/img/logo.png"
+                        alt="Logo"
+                      />
                     </a>
                   </div>
-                  <ul class="media-wrap">
+                  <ul class="media-wrap d-none d-lg-flex">
                     <!-- media-list start -->
                     <li class="media media-list">
                       <span class="media-icon"
@@ -103,7 +107,9 @@
                       ></span>
                       <div class="media-content">
                         <span class="media-sub-heading">hotline 24/7</span>
-                        <span class="media-heading">+0962-58-58-258 </span>
+                        <a class="media-heading" href="tel:+0962-58-58-258"
+                          >+0962-58-58-258</a
+                        >
                       </div>
                     </li>
                     <!-- media-list end -->
@@ -115,198 +121,263 @@
                       ></span>
                       <div class="media-content">
                         <span class="media-sub-heading">email us</span>
-                        <span class="media-heading"
-                          >support@clenora.com.uk</span
+                        <a
+                          class="media-heading"
+                          href="mailto:support@clenora.com.uk"
+                          >support@clenora.com.uk</a
                         >
                       </div>
                     </li>
                     <!-- media-list end -->
                   </ul>
+                  <a
+                    href="#"
+                    class="book-now-btn d-none d-sm-inline-block d-lg-none"
+                    >book an appointment</a
+                  >
+                  <div class="mobile-menu-toggle d-lg-none">
+                    <a href="#offcanvas-mobile-menu" class="offcanvas-toggle">
+                      <svg viewBox="0 0 800 600">
+                        <path
+                          d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200"
+                          id="top"
+                        ></path>
+                        <path d="M300,320 L540,320" id="middle"></path>
+                        <path
+                          d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190"
+                          id="bottom"
+                          transform="translate(480, 320) scale(1, -1) translate(-480, -318)"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- header-middle end -->
+
+        <!-- header-bottom start -->
+        <div class="header-bottom d-none d-lg-block">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div
+                  class="d-flex flex-wrap align-items-center justify-content-between"
+                >
+                  <ul class="main-menu">
+                    <li>
+                      <a class="main-menu-link active" href="index.html"
+                        >Home</a
+                      >
+                    </li>
+                    <li>
+                      <a class="main-menu-link" href="services.html"
+                        >Services</a
+                      >
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="sub-menu-link" href="services.html"
+                            >Services</a
+                          >
+                        </li>
+                        <li>
+                          <a class="sub-menu-link" href="service-details.html"
+                            >Service Details</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="main-menu-link" href="about.html">About</a>
+                    </li>
+                    <li>
+                      <a class="main-menu-link" href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                      <a class="main-menu-link" href="blog.html">Blog</a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="sub-menu-link" href="blog.html"
+                            >Blog Grid</a
+                          >
+                        </li>
+                        <li>
+                          <a class="sub-menu-link" href="blog-details.html"
+                            >Blog Single</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <a href="#" class="book-now-btn">book an appointment</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <!-- header-bottom end -->
-
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-12">
-              <div class="header-align">
-                <div class="header-navigation-area">
-                  <ul class="main-menu nav justify-content-center">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="has-submenu">
-                      <a href="services.html">Services</a>
-                      <ul class="submenu-nav">
-                        <li><a href="services.html">Services</a></li>
+        <!-- header-bottom start -->
+        <div class="header-bottom sticky-header d-none d-lg-block">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div
+                  class="d-flex flex-wrap align-items-center justify-content-between"
+                >
+                  <ul class="main-menu">
+                    <li>
+                      <a class="main-menu-link active" href="index.html"
+                        >Home</a
+                      >
+                    </li>
+                    <li>
+                      <a class="main-menu-link" href="services.html"
+                        >Services</a
+                      >
+                      <ul class="sub-menu">
                         <li>
-                          <a href="service-details.html">Service Details</a>
+                          <a class="sub-menu-link" href="services.html"
+                            >Services</a
+                          >
+                        </li>
+                        <li>
+                          <a class="sub-menu-link" href="service-details.html"
+                            >Service Details</a
+                          >
                         </li>
                       </ul>
                     </li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li class="has-submenu">
-                      <a href="blog.html">Blog</a>
-                      <ul class="submenu-nav">
-                        <li><a href="blog.html">Blog Grid</a></li>
-                        <li><a href="blog-details.html">Blog Single</a></li>
+                    <li>
+                      <a class="main-menu-link" href="about.html">About</a>
+                    </li>
+                    <li>
+                      <a class="main-menu-link" href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                      <a class="main-menu-link" href="blog.html">Blog</a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="sub-menu-link" href="blog.html"
+                            >Blog Grid</a
+                          >
+                        </li>
+                        <li>
+                          <a class="sub-menu-link" href="blog-details.html"
+                            >Blog Single</a
+                          >
+                        </li>
                       </ul>
                     </li>
                   </ul>
+                  <a href="#" class="book-now-btn">book an appointment</a>
                 </div>
-                <a href="#" class="book-now-btn">book an appointment</a>
               </div>
             </div>
           </div>
         </div>
+        <!-- header-bottom end -->
       </header>
 
       <!--== End Header Wrapper ==-->
 
       <main class="main-content site-wrapper-reveal">
         <!--== Start Hero Area Wrapper ==-->
-        <section
-          class="home-slider-area slider-default bg-img"
-          data-bg-img="assets/img/slider/main-slide-01.jpg"
-        >
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12">
-                <!-- Start Slide Item -->
-                <div
-                  class="slider-content-area"
-                  data-aos="fade-zoom-in"
-                  data-aos-duration="1300"
-                >
-                  <h5>feel the difference with us</h5>
-                  <h2>Your Health <span>Is Our Priority</span></h2>
-                </div>
-                <!-- End Slide Item -->
-                <div class="swiper-container service-slider-container">
-                  <div class="swiper-wrapper service-slider service-category">
-                    <div class="swiper-slide category-item">
-                      <div class="icon">
-                        <i class="icofont-stethoscope-alt"></i>
+        <section class="hero-slider">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <!-- swiper-slide start -->
+              <div
+                class="swiper-slide"
+                data-bg-img="assets/img/slider/slide1.jpg"
+              >
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="slider-content">
+                        <p class="text animated delay1">
+                          feel the difference with us
+                        </p>
+                        <h2 class="title animated delay2">
+                          Your Health <span>Is</span>
+                          <span class="d-block">Our Priority</span>
+                        </h2>
+                        <a href="#" class="btn btn-danger me-3 animated"
+                          >Get a quote</a
+                        >
+                        <a href="#" class="btn btn-outline-secondary animated"
+                          >our services</a
+                        >
                       </div>
-                      <h4>Diagnose</h4>
-                      <p>Examination & Diagnosis</p>
-                    </div>
-
-                    <div class="swiper-slide category-item">
-                      <div class="icon">
-                        <i class="icofont-brain-alt"></i>
-                      </div>
-                      <h4>Treatment</h4>
-                      <p>Treatment of the disease</p>
-                    </div>
-
-                    <div class="swiper-slide category-item">
-                      <div class="icon">
-                        <i class="icofont-paralysis-disability"></i>
-                      </div>
-                      <h4>Care Healthy</h4>
-                      <p>Care and recuperation</p>
                     </div>
                   </div>
                 </div>
               </div>
+              <!-- swiper-slide end -->
+              <!-- swiper-slide start -->
+              <div
+                class="swiper-slide"
+                data-bg-img="assets/img/slider/slide2.jpg"
+              >
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="slider-content">
+                        <p class="text">feel the difference with us</p>
+                        <h2 class="title">
+                          Your Health <span>Is</span>
+                          <span class="d-block">Our Priority</span>
+                        </h2>
+                        <a href="#" class="btn btn-danger me-3">Get a quote</a>
+                        <a href="#" class="btn btn-outline-secondary"
+                          >our services</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- swiper-slide end -->
+            </div>
+
+            <div class="swiper-button-prev">
+              <i class="icofont-arrow-left"></i>
+            </div>
+            <div class="swiper-button-next">
+              <i class="icofont-arrow-right"></i>
             </div>
           </div>
         </section>
         <!--== End Hero Area Wrapper ==-->
 
-        <!--== Start Appointment Form Area Wrapper ==-->
-        <section class="appointment-area" data-bg-color="#eaeded">
-          <div class="appointment-form-style1">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="appointment-form">
-                    <div class="section-title">
-                      <h5>We Alway Ready Helps you</h5>
-                      <h2 class="title">Book An <span>Appointment</span></h2>
-                    </div>
-                    <form
-                      id="contact-form"
-                      action="http://whizthemes.com/mail-php/raju/arden/mail.php"
-                      method="post"
-                    >
-                      <div class="row">
-                        <div class="col-md-3">
-                          <div class="form-group">
-                            <input
-                              class="form-control"
-                              type="text"
-                              name="con_name"
-                              placeholder="Enter your name..."
-                            />
-                          </div>
-                        </div>
-                        <div class="col-md-3">
-                          <div class="form-group">
-                            <input
-                              class="form-control"
-                              type="email"
-                              name="con_email"
-                              placeholder="sample@gmail.com"
-                            />
-                          </div>
-                        </div>
-                        <div class="col-md-3">
-                          <div class="form-group">
-                            <input
-                              class="form-control"
-                              type="text"
-                              name="con_phone"
-                              placeholder="Phone"
-                            />
-                          </div>
-                        </div>
-                        <div class="col-md-3">
-                          <div class="form-group datepicker-group">
-                            <label
-                              for="datepicker"
-                              class="form-label icon icofont-calendar"
-                            ></label>
-                            <input
-                              class="form-control"
-                              id="datepicker"
-                              type="text"
-                              name="con_date"
-                              placeholder="Date"
-                            />
-                          </div>
-                        </div>
-                        <div class="col-md-12">
-                          <div class="form-group mb-0">
-                            <textarea
-                              name="con_message"
-                              rows="7"
-                              placeholder="Your message here..."
-                            ></textarea>
-                          </div>
-                        </div>
-                        <div class="col-md-12">
-                          <div class="form-group mb-0">
-                            <button class="btn btn-theme" type="submit">
-                              Make an appointment
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                  <!-- Message Notification -->
-                  <div class="form-message"></div>
-                </div>
+        <div class="swiper-container service-slider-container">
+          <div class="swiper-wrapper service-slider service-category">
+            <div class="swiper-slide category-item">
+              <div class="icon">
+                <i class="icofont-stethoscope-alt"></i>
               </div>
+              <h4>Diagnose</h4>
+              <p>Examination & Diagnosis</p>
+            </div>
+
+            <div class="swiper-slide category-item">
+              <div class="icon">
+                <i class="icofont-brain-alt"></i>
+              </div>
+              <h4>Treatment</h4>
+              <p>Treatment of the disease</p>
+            </div>
+
+            <div class="swiper-slide category-item">
+              <div class="icon">
+                <i class="icofont-paralysis-disability"></i>
+              </div>
+              <h4>Care Healthy</h4>
+              <p>Care and recuperation</p>
             </div>
           </div>
-        </section>
-        <!--== End Appointment Form Area Wrapper ==-->
-
+        </div>
         <!--== Start Feature Area Wrapper ==-->
         <section
           class="feature-area feature-default-area"
@@ -425,6 +496,96 @@
           </div>
         </section>
         <!--== End Feature Area Wrapper ==-->
+
+        <!--== Start Appointment Form Area Wrapper ==-->
+        <section class="appointment-area" data-bg-color="#eaeded">
+          <div class="appointment-form-style1">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="appointment-form">
+                    <div class="section-title">
+                      <h5>We Alway Ready Helps you</h5>
+                      <h2 class="title">Book An <span>Appointment</span></h2>
+                    </div>
+                    <form
+                      id="contact-form"
+                      action="http://whizthemes.com/mail-php/raju/arden/mail.php"
+                      method="post"
+                    >
+                      <div class="row">
+                        <div class="col-md-3">
+                          <div class="form-group">
+                            <input
+                              class="form-control"
+                              type="text"
+                              name="con_name"
+                              placeholder="Enter your name..."
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="form-group">
+                            <input
+                              class="form-control"
+                              type="email"
+                              name="con_email"
+                              placeholder="sample@gmail.com"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="form-group">
+                            <input
+                              class="form-control"
+                              type="text"
+                              name="con_phone"
+                              placeholder="Phone"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="form-group datepicker-group">
+                            <label
+                              for="datepicker"
+                              class="form-label icon icofont-calendar"
+                            ></label>
+                            <input
+                              class="form-control"
+                              id="datepicker"
+                              type="text"
+                              name="con_date"
+                              placeholder="Date"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group mb-0">
+                            <textarea
+                              name="con_message"
+                              rows="7"
+                              placeholder="Your message here..."
+                            ></textarea>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group mb-0">
+                            <button class="btn btn-theme" type="submit">
+                              Make an appointment
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- Message Notification -->
+                  <div class="form-message"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--== End Appointment Form Area Wrapper ==-->
 
         <!--== Start Team Area Wrapper ==-->
         <section class="team-area team-default-area">
@@ -1191,6 +1352,240 @@
         </div>
       </footer>
       <!--== End Footer Area Wrapper ==-->
+
+      <!-- offcanvas-overlay start -->
+      <div class="offcanvas-overlay"></div>
+      <!-- offcanvas-overlay end -->
+      <!-- offcanvas-mobile-menu start -->
+      <div id="offcanvas-mobile-menu" class="offcanvas offcanvas-mobile-menu">
+        <div class="inner">
+          <div class="border-bottom mb-3 pb-3 text-end">
+            <button class="offcanvas-close">×</button>
+          </div>
+          <div class="offcanvas-head mb-3">
+            <div class="header-top-offcanvas">
+              <p>
+                <i class="icofont-google-map"></i> <span>ADDRESS:</span> 568
+                Elizaberth Str, London, UK
+              </p>
+            </div>
+          </div>
+          <nav class="offcanvas-menu">
+            <ul>
+              <li>
+                <a href="#"><span class="menu-text">Home</span></a>
+                <ul class="offcanvas-submenu">
+                  <li><a href="index.html">Home 1</a></li>
+                  <li><a href="index-2.html">Home 2</a></li>
+                  <li><a href="index-3.html">Home 3</a></li>
+                  <li><a href="index-4.html">Home 4</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span class="menu-text">Shop</span></a>
+                <ul class="offcanvas-submenu">
+                  <li>
+                    <a href="#"><span class="menu-text">Shop Grid</span></a>
+                    <ul class="offcanvas-submenu">
+                      <li>
+                        <a href="shop-grid-3-column.html">Shop Grid 3 Column</a>
+                      </li>
+                      <li>
+                        <a href="shop-grid-4-column.html">Shop Grid 4 Column</a>
+                      </li>
+                      <li>
+                        <a href="shop-grid-left-sidebar.html"
+                          >Shop Grid Left Sidebar</a
+                        >
+                      </li>
+                      <li>
+                        <a href="shop-grid-right-sidebar.html"
+                          >Shop Grid Right Sidebar</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#"><span class="menu-text">Shop List</span></a>
+                    <ul class="offcanvas-submenu">
+                      <li><a href="shop-grid-list.html">Shop List</a></li>
+                      <li>
+                        <a href="shop-grid-list-left-sidebar.html"
+                          >Shop List Left Sidebar</a
+                        >
+                      </li>
+                      <li>
+                        <a href="shop-grid-list-right-sidebar.html"
+                          >Shop List Right Sidebar</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#"><span class="menu-text">Shop Single</span></a>
+                    <ul class="offcanvas-submenu">
+                      <li><a href="single-product.html">Shop Single</a></li>
+                      <li>
+                        <a href="single-product-configurable.html"
+                          >Shop Variable</a
+                        >
+                      </li>
+                      <li>
+                        <a href="single-product-affiliate.html"
+                          >Shop Affiliate</a
+                        >
+                      </li>
+                      <li>
+                        <a href="single-product-group.html">Shop Group</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#"><span class="menu-text">other pages</span></a>
+                    <ul class="offcanvas-submenu">
+                      <li><a href="about-us.html">About Page</a></li>
+                      <li><a href="cart.html">Cart Page</a></li>
+                      <li><a href="checkout.html">Checkout Page</a></li>
+                      <li><a href="compare.html">Compare Page</a></li>
+                      <li>
+                        <a href="login.html">Login &amp; Register Page</a>
+                      </li>
+                      <li><a href="myaccount.html">Account Page</a></li>
+                      <li><a href="wishlist.html">Wishlist Page</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span class="menu-text">Pages</span></a>
+                <ul class="offcanvas-submenu">
+                  <li><a href="about-us.html">About Page</a></li>
+                  <li><a href="cart.html">Cart Page</a></li>
+                  <li><a href="checkout.html">Checkout Page</a></li>
+                  <li><a href="compare.html">Compare Page</a></li>
+                  <li><a href="login.html">Login &amp; Register Page</a></li>
+                  <li><a href="myaccount.html">Account Page</a></li>
+                  <li><a href="wishlist.html">Wishlist Page</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span class="menu-text">Blog</span></a>
+                <ul class="offcanvas-submenu">
+                  <li>
+                    <a href="#"><span class="menu-text">Blog Grid</span></a>
+                    <ul class="offcanvas-submenu">
+                      <li>
+                        <a href="blog-grid-3-column.html">Blog Grid 3 column</a>
+                      </li>
+                      <li>
+                        <a href="blog-grid-4-column.html">Blog Grid 4 column</a>
+                      </li>
+                      <li>
+                        <a href="blog-grid-left-sidebar.html"
+                          >Blog Grid Left Sidebar</a
+                        >
+                      </li>
+                      <li>
+                        <a href="blog-grid-right-sidebar.html"
+                          >Blog Grid Right Sidebar</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#"><span class="menu-text">Blog List</span></a>
+                    <ul class="offcanvas-submenu">
+                      <li>
+                        <a href="blog-list-left-sidebar.html"
+                          >Blog List Left Sidebar</a
+                        >
+                      </li>
+                      <li>
+                        <a href="blog-list-right-sidebar.html"
+                          >Blog List Right Sidebar</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#"><span class="menu-text">Blog Single</span></a>
+                    <ul class="offcanvas-submenu">
+                      <li><a href="single-blog.html">Single Blog</a></li>
+                      <li>
+                        <a href="blog-single-left-sidebar.html"
+                          >Blog Single Left Sidebar</a
+                        >
+                      </li>
+                      <li>
+                        <a href="blog-single-right-sidebar.html"
+                          >Blog Single Right Sidbar</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
+          <div class="offcanvas-social my-4">
+            <ul>
+              <li>
+                <a href="#"><i class="icofont-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icofont-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icofont-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icofont-rss-feed"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="icofont-play-alt-1"></i></a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="media-wrap">
+            <!-- media-list start -->
+            <li class="media media-list">
+              <span class="media-icon"><i class="icofont-clock-time"></i></span>
+              <div class="media-content">
+                <span class="media-sub-heading">working hours</span>
+                <span class="media-heading">MON - FRI: 9.00 - 21.00 </span>
+              </div>
+            </li>
+            <!-- media-list end -->
+
+            <!-- media-list start -->
+            <li class="media media-list">
+              <span class="media-icon"><i class="icofont-ui-call"></i></span>
+              <div class="media-content">
+                <span class="media-sub-heading">hotline 24/7</span>
+                <a class="media-heading" href="tel:+0962-58-58-258"
+                  >+0962-58-58-258</a
+                >
+              </div>
+            </li>
+            <!-- media-list end -->
+
+            <!-- media-list start -->
+            <li class="media media-list">
+              <span class="media-icon"><i class="icofont-envelope"></i></span>
+              <div class="media-content">
+                <span class="media-sub-heading">email us</span>
+                <a class="media-heading" href="mailto:support@clenora.com.uk"
+                  >support@clenora.com.uk</a
+                >
+              </div>
+            </li>
+            <!-- media-list end -->
+          </ul>
+        </div>
+      </div>
+      <!-- offcanvas-mobile-menu end -->
 
       <!--== Scroll Top Button ==-->
       <div class="scroll-to-top"><span class="icofont-rounded-up"></span></div>

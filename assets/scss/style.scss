@@ -14,10 +14,11 @@
 
 // Common Styles
 @import "mexi/common";
-@import "mexi/navbar";
 
 // Header
 @import "header/header";
+@import "header/offcanvas-toggler";
+@import "header/offcanvas";
 
 // Banner Styles
 @import "mexi/banner";
