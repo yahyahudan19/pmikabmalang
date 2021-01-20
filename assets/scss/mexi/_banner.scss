@@ -16,13 +16,30 @@
     }
     @include min-screen(1280) {
       height: 775px;
-	}
-	&.swiper-slide-active .title.delay1 {
-		-webkit-animation-name: fadeInLeft;
-		animation-name: fadeInLeft;
-		-webkit-animation: fadeInLeft 0.8s ease-in-out;
-		animation: fadeInLeft 0.8s ease-in-out;
-	}
+    }
+    &.swiper-slide-active {
+      .text {
+        &.delay1 {
+          animation: fadeInLeft 1s ease-in-out;
+        }
+      }
+      .title {
+        &.delay2 {
+          animation: fadeInLeft 1.5s ease-in-out;
+        }
+      }
+      .text {
+        animation: fadeInLeft 2s ease-in-out;
+      }
+      .btn {
+        &.delay2 {
+          animation: fadeInLeft 2.5s ease-in-out;
+        }
+        &.delay1 {
+          animation: fadeInLeft 3s ease-in-out;
+        }
+      }
+    }
   }
 }
 
@@ -145,25 +162,3 @@
 }
 
 
-
-
-.hero-slider .hero-slide-item.swiper-slide-active .title.delay2 {
-	-webkit-animation: fadeInLeft 1.2s ease-in-out;
-	animation: fadeInLeft 1.2s ease-in-out;
-}
-
-
-.hero-slider .hero-slide-item.swiper-slide-active .text {
-	-webkit-animation: fadeInLeft 1.5s ease-in-out;
-	animation: fadeInLeft 1.5s ease-in-out;
-}
-
-.hero-slider .hero-slide-item.swiper-slide-active .btn {
-	-webkit-animation: fadeInLeft 2s ease-in-out;
-	animation: fadeInLeft 2s ease-in-out;
-}
-
-.hero-slider .hero-slide-item.swiper-slide-active .price {
-	-webkit-animation: fadeInLeft 1.8s ease-in-out;
-	animation: fadeInLeft 1.8s ease-in-out;
-}

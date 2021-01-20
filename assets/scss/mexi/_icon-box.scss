@@ -3,10 +3,16 @@
   Icon Box CSS
 -----------------------------------------------------------------------
 */
-.icon-box-style1 {
+.icon-box-style {
+  @media #{$lg-device} {
+    margin-bottom: -60px;
+  }
+  @media #{$xs-device} {
+    margin-bottom: -50px;
+  }
   .icon-box-item {
     display: flex;
-    margin-bottom: 96px;
+    margin-bottom: 95px;
     position: relative;
     @media #{$lg-device} {
       margin-bottom: 60px;
@@ -16,12 +22,12 @@
     }
 
     .icon {
-      color: $theme-color;
+      color: #8f1b1b;
       font-size: 72px;
       float: left;
       line-height: 1;
       margin-right: 26px;
-      @include transition(.3s);
+      @include transition(0.3s);
     }
 
     .content {
@@ -37,19 +43,17 @@
         a {
           color: $black-0e;
           &:hover {
-            color: $theme-color;
+            color: #8f1b1b;
           }
         }
       }
       p {
         font-size: 13px;
         line-height: 24px;
-        @include transition(.3s);
+        @include transition(0.3s);
       }
       .btn-theme {
         margin-top: 10px;
-      }
-      .btn-link {
       }
     }
     &:hover {
@@ -58,23 +62,6 @@
           color: $black;
         }
       }
-    }
-  }
-}
-
-.icon-box-style2 {
-  .icon-box-item {
-    position: relative;
-    z-index: 0;
-    &:before {
-      background-color: $white;
-      content: "";
-      height: 100%;
-      left: 0;
-      position: absolute;
-      top: 0;
-      width: 100%;
-      z-index: -1;
     }
   }
 }

@@ -4,17 +4,11 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Hope – Health & Medical HTML5 Template</title>
-
     <!--== Favicon ==-->
-    <link
-      rel="shortcut icon"
-      href="assets/img/favicon.ico"
-      type="image/x-icon"
-    />
-
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon"/>
     <!--== Main Style CSS ==-->
+    <link href="assets/css/animate.css" rel="stylesheet" />
     <link href="assets/css/style.css" rel="stylesheet" />
   </head>
 
@@ -303,10 +297,12 @@
                           Your Health <span>Is</span>
                           <span class="d-block">Our Priority</span>
                         </h2>
-                        <a href="#" class="btn btn-danger me-3 animated"
+                        <a href="#" class="btn btn-danger me-3 animated delay1"
                           >Get a quote</a
                         >
-                        <a href="#" class="btn btn-outline-secondary animated"
+                        <a
+                          href="#"
+                          class="btn btn-outline-secondary animated delay2"
                           >our services</a
                         >
                       </div>
@@ -324,13 +320,19 @@
                   <div class="row">
                     <div class="col-12">
                       <div class="slider-content">
-                        <p class="text">feel the difference with us</p>
-                        <h2 class="title">
+                        <p class="text animated delay1">
+                          feel the difference with us
+                        </p>
+                        <h2 class="title animated delay2">
                           Your Health <span>Is</span>
                           <span class="d-block">Our Priority</span>
                         </h2>
-                        <a href="#" class="btn btn-danger me-3">Get a quote</a>
-                        <a href="#" class="btn btn-outline-secondary"
+                        <a href="#" class="btn btn-danger me-3 animated delay1"
+                          >Get a quote</a
+                        >
+                        <a
+                          href="#"
+                          class="btn btn-outline-secondary animated delay2"
                           >our services</a
                         >
                       </div>
@@ -351,38 +353,44 @@
         </section>
         <!--== End Hero Area Wrapper ==-->
 
-        <div class="swiper-container service-slider-container">
-          <div class="swiper-wrapper service-slider service-category">
-            <div class="swiper-slide category-item">
-              <div class="icon">
-                <i class="icofont-stethoscope-alt"></i>
+        <!-- static media start -->
+        <section class="static-media">
+          <div class="container">
+            <div class="row mb-n4">
+              <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="media">
+                  <div class="media-body">
+                    <h4 class="title">Diagnose</h4>
+                    <p>Examination & Diagnosis</p>
+                  </div>
+                  <span class="icon icofont-stethoscope-alt"></span>
+                </div>
               </div>
-              <h4>Diagnose</h4>
-              <p>Examination & Diagnosis</p>
-            </div>
-
-            <div class="swiper-slide category-item">
-              <div class="icon">
-                <i class="icofont-brain-alt"></i>
+              <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="media">
+                  <div class="media-body">
+                    <h4 class="title">Treatment</h4>
+                    <p>Treatment of the disease</p>
+                  </div>
+                  <span class="icon icofont-brain-alt"></span>
+                </div>
               </div>
-              <h4>Treatment</h4>
-              <p>Treatment of the disease</p>
-            </div>
-
-            <div class="swiper-slide category-item">
-              <div class="icon">
-                <i class="icofont-paralysis-disability"></i>
+              <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="media">
+                  <div class="media-body">
+                    <h4 class="title">Care Healthy</h4>
+                    <p>Care and recuperation</p>
+                  </div>
+                  <span class="icon icofont-paralysis-disability"></span>
+                </div>
               </div>
-              <h4>Care Healthy</h4>
-              <p>Care and recuperation</p>
             </div>
           </div>
-        </div>
+        </section>
+        <!-- static media end -->
+
         <!--== Start Feature Area Wrapper ==-->
-        <section
-          class="feature-area feature-default-area"
-          data-bg-color="#eaeded"
-        >
+        <section class="feature-section" data-bg-color="#fff">
           <div class="container">
             <div class="row">
               <div class="col-lg-12">
@@ -391,15 +399,15 @@
                   data-aos="fade-up"
                   data-aos-duration="1100"
                 >
-                  <h5>Why Choose Mexi Medical</h5>
-                  <h2 class="title">The Best <span>For Your Health</span></h2>
+                  <p>Why Choose Mexi Medical</p>
+                  <h2 class="title"><span>The Best</span> For Your Health</h2>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-lg-12 col-xl-8">
                 <div
-                  class="row icon-box-style1"
+                  class="row icon-box-style"
                   data-aos="fade-up"
                   data-aos-duration="1100"
                 >
@@ -498,15 +506,15 @@
         <!--== End Feature Area Wrapper ==-->
 
         <!--== Start Appointment Form Area Wrapper ==-->
-        <section class="appointment-area" data-bg-color="#eaeded">
+        <section class="appointment-area" data-bg-color="#f3f3f3">
           <div class="appointment-form-style1">
             <div class="container">
               <div class="row">
-                <div class="col-lg-12">
+                <div class="col-12">
                   <div class="appointment-form">
                     <div class="section-title">
-                      <h5>We Alway Ready Helps you</h5>
-                      <h2 class="title">Book An <span>Appointment</span></h2>
+                      <p>We Alway Ready Helps you</p>
+                      <h2 class="title"><span>Book An</span> Appointment</h2>
                     </div>
                     <form
                       id="contact-form"
@@ -588,7 +596,7 @@
         <!--== End Appointment Form Area Wrapper ==-->
 
         <!--== Start Team Area Wrapper ==-->
-        <section class="team-area team-default-area">
+        <section class="team-area team-default-area" data-bg-color="#f3f3f3">
           <div class="container">
             <div class="row">
               <div class="col-lg-12">
@@ -597,9 +605,9 @@
                   data-aos="fade-up"
                   data-aos-duration="1000"
                 >
-                  <h5>Meet Our Docots</h5>
+                  <p>Meet Our Docots</p>
                   <h2 class="title">
-                    Professional & <span>Enthusiastic</span>
+                    <span>Professional &</span> Enthusiastic
                   </h2>
                 </div>
               </div>
@@ -688,8 +696,8 @@
                   data-aos="fade-up"
                   data-aos-duration="1000"
                 >
-                  <h5>Testimonial</h5>
-                  <h2 class="title">Trusted <span>From Clients</span></h2>
+                  <p>Testimonial</p>
+                  <h2 class="title"><span>Trusted</span> From Clients</h2>
                 </div>
               </div>
             </div>
@@ -819,9 +827,9 @@
                   data-aos="fade-up"
                   data-aos-duration="1000"
                 >
-                  <h5>Pricing List</h5>
+                  <p>Pricing List</p>
                   <h2 class="title">
-                    Protect <span>With Health Care Card</span>
+                    <span>Protect</span> With Health Care Card
                   </h2>
                 </div>
               </div>
@@ -969,7 +977,7 @@
                   data-aos="fade-up"
                   data-aos-duration="1000"
                 >
-                  <h2 class="title">Tips & <span>Tricks</span></h2>
+                  <h2 class="title"><span>Tips &</span> Tricks</h2>
                 </div>
                 <div
                   class="post-items-style1"
@@ -1047,7 +1055,7 @@
                   data-aos="fade-up"
                   data-aos-duration="1000"
                 >
-                  <h2 class="title">FAQs</h2>
+                  <h2 class="title"><span>FAQs</span></h2>
                 </div>
                 <div
                   class="accordian-content"
@@ -1202,14 +1210,14 @@
       </main>
 
       <!--== Start Footer Area Wrapper ==-->
-      <footer class="footer-area reveal-footer">
+      <footer class="footer-area">
         <div class="container">
           <div class="row">
             <div class="col-sm-6 col-md-5 col-lg-4 col-xl-3">
               <div class="widget-item">
                 <div class="about-widget">
                   <a class="footer-logo" href="index.html">
-                    <img src="assets/img/logo.png" alt="Logo" />
+                    <img src="assets/img/logo-dark.png" alt="Logo" />
                   </a>
                   <p class="mb-0">
                     Sed elit quam, iaculis sed semper sit amet udin vitae nibh
@@ -1228,7 +1236,7 @@
                     </li>
                     <li class="info-phone">
                       <i class="icofont-ui-call"></i
-                      ><a href="tel://(0091) 8547 632521">(0091) 8547 632521</a>
+                      ><a href="tel://(0091)8547632521">(0091) 8547 632521</a>
                     </li>
                   </ul>
                 </div>
@@ -1339,7 +1347,7 @@
               <div class="col-sm-12">
                 <div class="widget-copyright">
                   <p>
-                    © 2025 <span>MEXI</span>. Made with
+                    &copy; 2021 <span class="text-uppercase">hope</span>. Made with
                     <i class="icofont-heart-alt"></i> by
                     <a target="_blank" href="https://www.hasthemes.com"
                       >HasThemes</a

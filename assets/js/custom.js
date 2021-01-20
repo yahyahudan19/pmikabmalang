@@ -95,13 +95,13 @@
   $(document).ready(function () {
     var heroSlider = new Swiper(".hero-slider .swiper-container", {
       slidesPerView: 1,
-      speed: 1000,
+      speed: 600,
       loop: true,
       spaceBetween: 0,
       autoplay: false,
       navigation: {
-        nextEl: '.hero-slider .swiper-button-next',
-        prevEl: '.hero-slider .swiper-button-prev',
+        nextEl: ".hero-slider .swiper-button-next",
+        prevEl: ".hero-slider .swiper-button-prev",
       },
     });
 
@@ -361,24 +361,15 @@
     return false;
   });
 
-  // Reveal Footer JS
-  let revealId = $(".reveal-footer"),
-    footerHeight = revealId.outerHeight(),
-    windowWidth = $(window).width(),
-    windowHeight = $(window).outerHeight();
-
-  if (windowWidth > 991 && windowHeight > footerHeight) {
-    $(".site-wrapper-reveal").css({
-      "margin-bottom": footerHeight + "px",
-    });
-  }
-
   /* ==========================================================================
    When document is loading, do
    ========================================================================== */
 
   $(window).on("load", function () {
-    AOS.init();
+    AOS.init({
+      easing: "ease", // default easing for AOS animations
+      once: true, // whether animation should happen only once - while scrolling down
+    });
     stylePreloader();
   });
 

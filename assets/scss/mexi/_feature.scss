@@ -3,44 +3,43 @@
 	Feature CSS
 -----------------------------------------------------------------------
 */
-.feature-area {
-	&.feature-default-area {
-    padding: 0 0 74px;
+.feature-section {
+  .container {
+    z-index: 3;
     position: relative;
+  }
+  padding: 125px 0px;
+  position: relative;
+  @media (max-width: 1199px) {
+    padding-top: 0px;
+  }
+
+
+  @media (max-width: 767px) {
+    padding-bottom: 80px;
+  }
+
+
+  .section-title {
+    margin-bottom: 100px;
     @media #{$lg-device} {
-      padding: 100px 0 35px;
+      margin-bottom: 70px;
     }
     @media #{$sm-device} {
-      padding: 80px 0 15px;
+      margin-bottom: 60px;
     }
     @media #{$xs-device} {
-      padding: 70px 0 5px;
+      margin-bottom: 50px;
     }
-    .section-title {
-      margin-bottom: 94px;
-      @media #{$lg-device} {
-        margin-bottom: 70px;
-      }
-      @media #{$sm-device} {
-        margin-bottom: 60px;
-      }
-      @media #{$xs-device} {
-        margin-bottom: 50px;
-      }
+  }
+  .thumb {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+
+    z-index: 1;
+    @media #{$lg-device} {
+      display: none;
     }
-    .thumb {
-      bottom: 0;
-    	left: calc(50% + 253px);
-    	position: absolute;
-      @media #{$xxl-device} {
-        left: calc(50% + 150px);
-      }
-      @media #{$lg-device} {
-        display: none;
-      }
-    	img {
-    		max-width: none;
-    	}
-    }
-	}
+  }
 }

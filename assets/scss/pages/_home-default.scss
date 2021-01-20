@@ -4,16 +4,10 @@
 -----------------------------------------------------------------------
 */
 .home-default-wrapper {
-  .appointment-area {
-    padding: 0 0 63px;
-    @media #{$lg-device} {
-      padding: 0;
-    }
-  }
   .accordian-content {
     padding-right: 30px;
     padding-top: 2px;
-    .accordion  {
+    .accordion {
       margin-bottom: 52px;
       @media #{$md-device} {
         margin-bottom: 30px;
