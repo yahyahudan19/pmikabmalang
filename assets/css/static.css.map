@@ -2,7 +2,7 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "../scss/mexi/static.scss"
+        "../scss/hope/static.scss"
     ],
     "names": [],
     "file": "static.css"

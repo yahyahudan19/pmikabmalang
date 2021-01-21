@@ -4,12 +4,13 @@
 -----------------------------------------------------------------------
 */
 .about-area {
-  padding: 145px 0 154px;
+  padding: 125px 0px;
+  border-bottom: 1px solid #e5e5e5;
   @media #{$lg-device} {
-    padding: 90px 0 65px;
+    padding: 90px 0px;
   }
   @media #{$sm-device} {
-    padding: 72px 0 45px;
+    padding:70px 0px;
   }
   .text-pra {
     color: $black;
@@ -17,7 +18,7 @@
     font-weight: $font-weight-light;
     line-height: 48px;
     letter-spacing: -.10px;
-    margin: 0 auto 127px;
+    margin: 0 auto 125px;
     max-width: 830px;
     padding-right: 50px;
     @media #{$lg-device} {
@@ -115,7 +116,7 @@
     .office-address-content {
       display: flex;
       justify-content: space-between;
-      margin: 135px auto 0;
+      margin: 125px auto 0;
       max-width: 830px;
       padding-right: 30px;
       @media #{$lg-device} {

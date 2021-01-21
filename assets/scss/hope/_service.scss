@@ -50,7 +50,7 @@
     padding: 80px 0px;
   }
   .section-title {
-    margin-bottom: 89px;
+    margin-bottom: 90px;
     @media #{$lg-device} {
       margin-bottom: 70px;
     }
@@ -101,7 +101,7 @@
   .service-item {
     border-bottom: 1px solid $white;
     border-right: 1px solid #ebebeb;
-    padding: 49px 30px 37px 41px;
+    padding: 50px 30px 35px 40px;
     position: relative;
     @include transition(0.3s);
     @media #{$lg-device} {
@@ -144,7 +144,7 @@
     }
 
     &:hover {
-      background-color: #f2f6f6;
+      background-color: #f3f3f3;
       &:before {
         height: 4px;
       }

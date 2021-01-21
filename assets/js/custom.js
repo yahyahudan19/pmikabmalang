@@ -1,27 +1,6 @@
 (function ($) {
   "use strict";
 
-  // Preloader
-  function stylePreloader() {
-    $("body").addClass("preloader-deactive");
-  }
-
-  // Background Image
-  $("[data-bg-img]").each(function () {
-    $(this).css("background-image", "url(" + $(this).data("bg-img") + ")");
-  });
-  // Background Color
-  $("[data-bg-color]").each(function () {
-    $(this).css("background-color", $(this).data("bg-color"));
-  });
-  // Height
-  $("[data-height]").each(function () {
-    $(this).css("height", $(this).data("height"));
-  });
-  // Padding Bottom
-  $("[data-padding-bottom]").each(function () {
-    $(this).css("padding-bottom", $(this).data("padding-bottom"));
-  });
 
   var $window = $(window),
     $body = $("body");
@@ -90,6 +69,7 @@
       }
     });
   }
+  mobileOffCanvasMenu()
 
   // Swipper JS
   $(document).ready(function () {
@@ -276,6 +256,23 @@
     });
   });
 
+
+  // Preloader
+  function stylePreloader() {
+    $("body").addClass("preloader-deactive");
+  }
+
+  // Background Image
+  $("[data-bg-img]").each(function () {
+    $(this).css("background-image", "url(" + $(this).data("bg-img") + ")");
+  });
+  // Background Color
+  $("[data-bg-color]").each(function () {
+    $(this).css("background-color", $(this).data("bg-color"));
+  });
+
+
+
   // Fancybox Js
   $(".lightbox-image").fancybox();
 
@@ -305,7 +302,6 @@
     }
   });
 
-  jQuery(document).ready(function ($) {
     // Ajax Contact Form JS
     var form = $("#contact-form");
     var formMessages = $(".form-message");
@@ -350,7 +346,7 @@
           }
         });
     });
-  });
+  
 
   // Datepicker
   $("#datepicker").datepicker();
@@ -373,15 +369,4 @@
     stylePreloader();
   });
 
-  /* ==========================================================================
-   When document is Scrollig, do
-   ========================================================================== */
-
-  $(window).on("scroll", function () {});
-
-  /* ==========================================================================
-   When Window is resizing, do
-   ========================================================================== */
-
-  $(window).on("resize", function () {});
 })(window.jQuery);

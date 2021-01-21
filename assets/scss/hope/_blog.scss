@@ -11,7 +11,7 @@
       padding: 100px 0px;
     }
     @media #{$sm-device} {
-      padding:80px 0px;
+      padding: 80px 0px;
     }
     @media #{$xs-device} {
       padding: 45px 0 70px;
@@ -28,6 +28,9 @@
   }
 }
 
+.blog-border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
 .post-items-style1 {
   padding-right: 69px;
   @media #{$lg-device} {
@@ -148,7 +151,7 @@
       }
       img {
         width: 100%;
-        @include transition(all 0.8s ease-in-out);
+        transition: all 0.3s;
       }
     }
     .content {
@@ -227,7 +230,7 @@
       z-index: 1;
       img {
         width: 100%;
-        @include transition(all 0.8s ease-in-out);
+        transition: all 0.3s;
       }
     }
     .content {
@@ -403,13 +406,13 @@
       .title {
         display: inline-block;
         font-size: 36px;
-        font-weight: $font-weight-bold;
+        font-weight: $font-weight-light;
         letter-spacing: -1.04px;
         line-height: 1.1;
         margin-bottom: 46px;
         span {
           color: $theme-color;
-          font-weight: $font-weight-light;
+          font-weight: $font-weight-bold;
         }
       }
       .post-items-style3 {
@@ -447,15 +450,16 @@
 
 .comment-area {
   background-color: #eef1f3;
-  padding: 125px 0 146px;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 125px 0px;
   @media #{$lg-device} {
-    padding: 95px 0 100px;
+    padding: 100px 0px;
   }
   @media #{$sm-device} {
-    padding: 85px 0 90px;
+    padding: 85px 0px;
   }
   .section-title {
-    margin-bottom: 46px;
+    margin-bottom: 45px;
     .title {
       font-size: 36px;
       margin-bottom: 9px;
@@ -652,8 +656,15 @@
       }
 
       .widget-blog-post {
-        margin-bottom: 77px;
-        padding-top: 7px;
+        margin-bottom: 70px;
+        padding-top: 5px;
+      }
+
+      @media (max-width: 767px) {
+        .widget-blog-post {
+          margin-bottom: 50px;
+          padding-top: 5px;
+        }
       }
 
       .widget-tags {

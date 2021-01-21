@@ -1,22 +1,48 @@
-/*===================================================================
-[Table Of Content]
+@charset "UTF-8";
+/*-------------------------------------------------------------
 
-    * Imported CSS
-    * Typography CSS
-    * Common CSS
-    * Main Navigation CSS
-    * Header CSS
-    * Home Slider CSS
-    * About CSS
-    * Service CSS
-    * Team CSS
-    * Brand Logo CSS
-    * Form CSS
-    * Blog CSS
-    * Contact CSS
-    * Footer CSS
+  #  Template Name: Hope – Health & Medical HTML5 Template
+  #  Author   Name: Hastech
+  #  Version: 1.0
+
+-------------------------------------------------------------
     
-=====================================================================*/
+  #   CSS INDEX
+========================================================
+	
+    [ 01. Imported CSS ]
+
+    [ 02. Typography CSS ]
+
+    [ 03. Common CSS ]
+
+    [ 04. Header CSS ]
+
+    [ 05. Hero slider CSS ]
+
+    [ 06 About CSS ]
+
+    [ 07 Service CSS ]
+
+    [ 08 Team CSS ]
+
+    [ 09 Brand Logo CSS ]
+
+    [ 10 Form CSS ]
+
+    [ 11 Blog CSS ] 
+
+    [ 12 Contact CSS ]
+
+    [ 13 Footer CSS ]
+
+    
+-----------------------------------------------------*/
+/*
+
+[ 01. Imported CSS ]
+
+*/
 /*
 -----------------------------------------------------------------------
 	Imported CSS
@@ -30,6 +56,11 @@
 @import url(aos.css);
 @import url(swiper.min.css);
 @import url(plugin-collection.css);
+/*
+
+[ 02. Typography CSS ]
+
+*/
 /*
 -----------------------------------------------------------------------
   Typography CSS
@@ -138,6 +169,11 @@ table p {
   margin-bottom: 0;
 }
 
+/*
+
+[ 03. Common CSS ]
+
+*/
 /*
 -----------------------------------------------------------------------
   Common CSS
@@ -656,13 +692,13 @@ table p {
 /*-------- Page Title Style Css --------*/
 .page-title-area .page-title-content {
   letter-spacing: 0;
-  padding: 52px 0;
+  padding: 60px 0;
 }
 
 .page-title-area .page-title-content .title {
   color: #000;
   font-size: 48px;
-  font-weight: 700;
+  font-weight: 300;
   letter-spacing: -1.377px;
   line-height: 1.1;
 }
@@ -681,7 +717,7 @@ table p {
 
 .page-title-area .page-title-content .title span {
   color: #8f1b1b;
-  font-weight: 300;
+  font-weight: 700;
 }
 
 .page-title-area .page-title-content .bread-crumbs {
@@ -805,23 +841,23 @@ table p {
 }
 
 .page-title-area .page-title-content.content-style3 {
-  padding: 52px 0 102px;
+  padding: 60px 0px;
 }
 
 @media only screen and (max-width: 1199px) {
   .page-title-area .page-title-content.content-style3 {
-    padding: 52px 0 60px;
+    padding: 50px 0px;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .page-title-area .page-title-content.content-style3 {
-    padding: 32px 0 40px;
+    padding: 30px 0px;
   }
 }
 
 .page-title-area .page-title-content.content-style4 {
-  padding: 53px 0px 6px;
+  padding: 50px 0px 6px;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -831,24 +867,24 @@ table p {
 }
 
 .page-title-area .page-title-content.content-style5 {
-  padding: 429px 0 269px;
+  padding: 245px 0px;
 }
 
 @media only screen and (max-width: 1199px) {
   .page-title-area .page-title-content.content-style5 {
-    padding: 266px 0 100px;
+    padding: 200px 0px;
   }
 }
 
 @media only screen and (max-width: 991px) {
   .page-title-area .page-title-content.content-style5 {
-    padding: 235px 0 100px;
+    padding: 150px 0px;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .page-title-area .page-title-content.content-style5 {
-    padding: 195px 0 65px;
+    padding: 100px 0px;
   }
 }
 
@@ -1294,10 +1330,14 @@ table p {
 .faq-area .accordian-content .accordion .accordion-item .accordion-header .accordion-button {
   background-color: #fff;
   box-shadow: none;
-  color: #568701;
+  color: #8f1b1b;
   font-size: 18px;
   font-weight: 700;
   padding: 13px 30px 14px;
+}
+
+.faq-area .accordian-content .accordion .accordion-item .accordion-header .accordion-button:hover {
+  color: #8f1b1b;
 }
 
 .faq-area .accordian-content .accordion .accordion-item .accordion-header .accordion-button:before {
@@ -1312,6 +1352,10 @@ table p {
 .faq-area .accordian-content .accordion .accordion-item .accordion-header .accordion-button .icon {
   color: #8f1b1b;
   font-size: 18px;
+}
+
+.faq-area .accordian-content .accordion .accordion-item .accordion-header .accordion-button .icon:hover {
+  color: #8f1b1b;
 }
 
 .faq-area .accordian-content .accordion .accordion-item .accordion-header .accordion-button.collapsed {
@@ -1330,6 +1374,7 @@ table p {
 
 .faq-area .accordian-content .accordion .accordion-item .accordion-header .accordion-button.collapsed:hover {
   background-color: transparent;
+  color: #8f1b1b;
 }
 
 .faq-area .accordian-content .accordion .accordion-item .accordion-header .accordion-button.collapsed:hover:before {
@@ -2837,6 +2882,33 @@ table p {
   margin-bottom: -1.5rem;
 }
 
+.section-py {
+  padding: 45px 0px 70px;
+}
+
+@media (max-width: 767px) {
+  .section-py {
+    padding: 0px 0px 70px;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-py {
+    padding: 45px 0px 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section-py {
+    padding: 45px 0px 125px;
+  }
+}
+
+/*
+
+[ 04. Header CSS ]
+
+*/
 .header {
   background: #8f1b1b;
 }
@@ -3599,23 +3671,34 @@ body.offcanvas-open {
 }
 
 /*
+
+[ 05. Hero slider CSS ]
+
+*/
+/*
+
+[ 06 About CSS ]
+
+*/
+/*
 -----------------------------------------------------------------------
 	About CSS
 -----------------------------------------------------------------------
 */
 .about-area {
-  padding: 145px 0 154px;
+  padding: 125px 0px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 @media only screen and (max-width: 1199px) {
   .about-area {
-    padding: 90px 0 65px;
+    padding: 90px 0px;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .about-area {
-    padding: 72px 0 45px;
+    padding: 70px 0px;
   }
 }
 
@@ -3625,7 +3708,7 @@ body.offcanvas-open {
   font-weight: 300;
   line-height: 48px;
   letter-spacing: -.10px;
-  margin: 0 auto 127px;
+  margin: 0 auto 125px;
   max-width: 830px;
   padding-right: 50px;
 }
@@ -3767,7 +3850,7 @@ body.offcanvas-open {
 .about-area .office-center-content .office-address-content {
   display: flex;
   justify-content: space-between;
-  margin: 135px auto 0;
+  margin: 125px auto 0;
   max-width: 830px;
   padding-right: 30px;
 }
@@ -3812,6 +3895,11 @@ body.offcanvas-open {
   margin-bottom: 0;
 }
 
+/*
+
+[ 07 Service CSS ]
+
+*/
 /*
 -----------------------------------------------------------------------
 	Service CSS
@@ -3878,7 +3966,7 @@ body.offcanvas-open {
 }
 
 .service-area .section-title {
-  margin-bottom: 89px;
+  margin-bottom: 90px;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -3939,7 +4027,7 @@ body.offcanvas-open {
 .service-style2 .service-item {
   border-bottom: 1px solid #fff;
   border-right: 1px solid #ebebeb;
-  padding: 49px 30px 37px 41px;
+  padding: 50px 30px 35px 40px;
   position: relative;
   transition: all 0.3s;
 }
@@ -3983,7 +4071,7 @@ body.offcanvas-open {
 }
 
 .service-style2 .service-item:hover {
-  background-color: #f2f6f6;
+  background-color: #f3f3f3;
 }
 
 .service-style2 .service-item:hover:before {
@@ -4071,6 +4159,11 @@ body.offcanvas-open {
 }
 
 /*
+
+[ 08 Team CSS ]
+
+*/
+/*
 -----------------------------------------------------------------------
 	Team CSS
 -----------------------------------------------------------------------
@@ -4114,14 +4207,15 @@ body.offcanvas-open {
 }
 
 .team-member {
+  background: #fff;
   border: 1px solid #e7e7e7;
-  padding: 24px;
+  padding: 30px;
   position: relative;
 }
 
 @media only screen and (max-width: 767px) {
   .team-member {
-    padding: 7px;
+    padding: 10px;
   }
 }
 
@@ -4135,13 +4229,13 @@ body.offcanvas-open {
 }
 
 .team-member .content {
-  padding: 35px 27px 24px;
+  padding: 35px 30px 0px;
   text-align: center;
 }
 
 @media only screen and (max-width: 767px) {
   .team-member .content {
-    padding: 30px 10px 24px;
+    padding: 30px 10px 0px;
   }
 }
 
@@ -4173,7 +4267,7 @@ body.offcanvas-open {
 
 .team-member .content .member-info p {
   color: #999999;
-  margin-bottom: 36px;
+  margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -4768,6 +4862,11 @@ body.offcanvas-open {
 }
 
 /*
+
+[ 09 Brand Logo CSS ]
+
+*/
+/*
 -----------------------------------------------------------------------
   Brand Logo CSS
 -----------------------------------------------------------------------
@@ -4891,13 +4990,13 @@ body.offcanvas-open {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 95px 0 104px;
+  padding: 100px 0px;
 }
 
 @media only screen and (max-width: 767px) {
   .divider-area .divider-content-area.divider-content-style1 {
     display: block;
-    padding: 75px 0 84px;
+    padding: 75px 0px;
   }
 }
 
@@ -4905,7 +5004,7 @@ body.offcanvas-open {
   color: #fff;
   font-size: 48px;
   font-weight: 700;
-  letter-spacing: .6px;
+  letter-spacing: 0.6px;
   line-height: 1.1;
   margin-bottom: 22px;
 }
@@ -4954,15 +5053,15 @@ body.offcanvas-open {
   color: #8f1b1b;
   font-size: 18px;
   font-weight: 700;
-  letter-spacing: -.097px;
-  padding: 19px 47px;
+  letter-spacing: -0.097px;
+  padding: 15px 40px;
   text-transform: uppercase;
 }
 
 @media only screen and (max-width: 767px) {
   .divider-area .divider-content-area.divider-content-style1 .btn-theme.btn-white {
     font-size: 14px;
-    padding: 11px 30px;
+    padding: 10px 30px;
   }
 }
 
@@ -5112,6 +5211,11 @@ body.offcanvas-open {
   color: #000;
 }
 
+/*
+
+[ 10 Form CSS ]
+
+*/
 /*
 -----------------------------------------------------------------------
 	Form CSS
@@ -5636,12 +5740,13 @@ body.offcanvas-open {
 -----------------------------------------------------------------------
 */
 .department-area {
-  padding: 42px 0 140px;
+  padding: 40px 0 125px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 @media only screen and (max-width: 1199px) {
   .department-area {
-    padding: 42px 0 100px;
+    padding: 40px 0 100px;
   }
 }
 
@@ -5919,7 +6024,7 @@ body.offcanvas-open {
   border-radius: 3px;
   font-size: 14px;
   font-weight: 700;
-  letter-spacing: .25px;
+  letter-spacing: 0.25px;
   line-height: 32px;
   margin-top: 22px;
   padding: 8px 30px;
@@ -5942,7 +6047,7 @@ body.offcanvas-open {
 
 .department-content .title {
   font-size: 48px;
-  font-weight: 700;
+  font-weight: 300;
   letter-spacing: -1.377px;
   line-height: 1.1;
   margin-bottom: 34px;
@@ -5968,7 +6073,7 @@ body.offcanvas-open {
 }
 
 .department-content .title span {
-  font-weight: 300;
+  font-weight: 700;
   color: #8f1b1b;
 }
 
@@ -6120,7 +6225,7 @@ body.offcanvas-open {
   color: #000;
   font-size: 24px;
   font-weight: 400;
-  letter-spacing: -.25px;
+  letter-spacing: -0.25px;
   margin-bottom: 40px;
 }
 
@@ -6164,8 +6269,8 @@ body.offcanvas-open {
 
 .department-content .team-single {
   border-bottom: 1px solid #eaeaea;
-  margin-bottom: 69px;
-  padding-bottom: 83px;
+  margin-bottom: 70px;
+  padding-bottom: 80px;
 }
 
 @media (max-width: 702px) {
@@ -6177,14 +6282,14 @@ body.offcanvas-open {
 
 .department-content .faq-area {
   border-bottom: 1px solid #eaeaea;
-  margin-bottom: 69px;
-  padding-bottom: 64px;
+  margin-bottom: 70px;
+  padding-bottom: 65px;
 }
 
 @media only screen and (max-width: 767px) {
   .department-content .faq-area {
-    margin-bottom: 59px;
-    padding-bottom: 54px;
+    margin-bottom: 60px;
+    padding-bottom: 55px;
   }
 }
 
@@ -6280,7 +6385,7 @@ body.offcanvas-open {
 .team-single .title {
   font-size: 36px;
   letter-spacing: -1.04px;
-  margin-bottom: 59px;
+  margin-bottom: 50px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -6305,7 +6410,7 @@ body.offcanvas-open {
 .team-single .membr-info .name {
   color: #2b2b2b;
   font-size: 22px;
-  letter-spacing: .25px;
+  letter-spacing: 0.25px;
   margin-bottom: 13px;
 }
 
@@ -6430,7 +6535,7 @@ body.offcanvas-open {
 }
 
 .case-item:hover .content .name a {
-  color: #568701;
+  color: #8f1b1b;
 }
 
 .case-slider-container .swiper-pagination {
@@ -6519,6 +6624,11 @@ body.offcanvas-open {
 }
 
 /*
+
+[ 11 Blog CSS ]
+
+*/
+/*
 -----------------------------------------------------------------------
 	Blog CSS
 -----------------------------------------------------------------------
@@ -6559,6 +6669,10 @@ body.offcanvas-open {
   .blog-area.blog-default-area .section-title {
     margin-bottom: 40px;
   }
+}
+
+.blog-border-bottom {
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .post-items-style1 {
@@ -6713,7 +6827,7 @@ body.offcanvas-open {
 
 .post-items-style2 .post-item .thumb img {
   width: 100%;
-  transition: all all 0.8s ease-in-out;
+  transition: all 0.3s;
 }
 
 .post-items-style2 .post-item .content .title {
@@ -6799,7 +6913,7 @@ body.offcanvas-open {
 
 .post-items-style3 .post-item .thumb img {
   width: 100%;
-  transition: all all 0.8s ease-in-out;
+  transition: all 0.3s;
 }
 
 .post-items-style3 .post-item .content .title {
@@ -7006,7 +7120,7 @@ body.offcanvas-open {
 .post-details-content .post-details-body .related-post .title {
   display: inline-block;
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 300;
   letter-spacing: -1.04px;
   line-height: 1.1;
   margin-bottom: 46px;
@@ -7014,7 +7128,7 @@ body.offcanvas-open {
 
 .post-details-content .post-details-body .related-post .title span {
   color: #8f1b1b;
-  font-weight: 300;
+  font-weight: 700;
 }
 
 .post-details-content .post-details-body .related-post .post-items-style3 .post-item .thumb {
@@ -7050,23 +7164,24 @@ body.offcanvas-open {
 
 .comment-area {
   background-color: #eef1f3;
-  padding: 125px 0 146px;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 125px 0px;
 }
 
 @media only screen and (max-width: 1199px) {
   .comment-area {
-    padding: 95px 0 100px;
+    padding: 100px 0px;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .comment-area {
-    padding: 85px 0 90px;
+    padding: 85px 0px;
   }
 }
 
 .comment-area .section-title {
-  margin-bottom: 46px;
+  margin-bottom: 45px;
 }
 
 .comment-area .section-title .title {
@@ -7265,8 +7380,15 @@ body.offcanvas-open {
 }
 
 .sidebar-wrapper.blog-sidebar-wrapper .widget-item .widget-blog-post {
-  margin-bottom: 77px;
-  padding-top: 7px;
+  margin-bottom: 70px;
+  padding-top: 5px;
+}
+
+@media (max-width: 767px) {
+  .sidebar-wrapper.blog-sidebar-wrapper .widget-item .widget-blog-post {
+    margin-bottom: 50px;
+    padding-top: 5px;
+  }
 }
 
 .sidebar-wrapper.blog-sidebar-wrapper .widget-item .widget-tags.tags-style2 ul {
@@ -7274,13 +7396,18 @@ body.offcanvas-open {
 }
 
 /*
+
+[ 12 Contact CSS ]
+
+*/
+/*
 -----------------------------------------------------------------------
 	Contact CSS
 -----------------------------------------------------------------------
 */
 .contact-area {
   background-color: #e9edee;
-  padding: 0 0 181px;
+  padding: 0 0 125px;
   position: relative;
 }
 
@@ -7321,14 +7448,14 @@ body.offcanvas-open {
   background-color: #8f1b1b;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 111px;
-  margin-top: -87px;
-  padding: 77px 47px 92px 71px;
+  margin-bottom: 125px;
+  margin-top: -90px;
+  padding: 75px 45px 90px 70px;
 }
 
 @media only screen and (max-width: 1199px) {
   .contact-info-content {
-    margin-bottom: 98px;
+    margin-bottom: 90px;
   }
 }
 
@@ -7382,7 +7509,7 @@ body.offcanvas-open {
   display: inline-block;
   font-size: 36px;
   font-weight: 700;
-  letter-spacing: -.44px;
+  letter-spacing: -0.44px;
   line-height: 1.1;
   margin-bottom: 19px;
 }
@@ -7401,7 +7528,7 @@ body.offcanvas-open {
 .contact-info-content .info-address p {
   color: #fff;
   font-size: 16px;
-  letter-spacing: -.15px;
+  letter-spacing: -0.15px;
   line-height: 24px;
   margin-bottom: 36px;
 }
@@ -7434,7 +7561,7 @@ body.offcanvas-open {
 }
 
 .contact-info-content .brand-office .info-tem {
-  letter-spacing: -.15px;
+  letter-spacing: -0.15px;
   margin-bottom: 42px;
 }
 
@@ -7541,6 +7668,11 @@ body.offcanvas-open {
   width: 100%;
 }
 
+/*
+
+[ 13 Footer CSS ]
+
+*/
 /*
 -----------------------------------------------------------------------
   Footer CSS
