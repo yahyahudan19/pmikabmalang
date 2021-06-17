@@ -5,7 +5,13 @@
 */
 
 .static-media {
-  padding: 90px 0px;
+  padding-top: 90px;
+  @media #{$xs-device} {
+    padding-top: 80px;
+  }
+  @media #{$sm-device} {
+    padding-top: 80px;
+  }
   .media {
     padding-bottom: 30px;
     border-bottom: 1px solid #e5e5e5;

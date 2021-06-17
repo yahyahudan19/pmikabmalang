@@ -99,16 +99,16 @@
     box-shadow: none !important;
   }
   &:hover {
-    background: #ff6666;
-    border-color: #ff6666;
+    background: #000;
+    border-color: #000;
   }
 }
 
 .btn-outline-secondary {
   border-color: #fff;
   &:hover {
-    background: #ff6666;
-    border-color: #ff6666;
+    background: #000;
+    border-color: #000;
   }
   &:focus {
     box-shadow: none !important;
@@ -122,10 +122,10 @@
     height: 60px;
     font-size: 25px;
     background: #fff;
-    color: #ff6666;
+    color: #000;
 
     &:hover {
-      background: #ff6666;
+      background: #000;
       color: #fff;
     }
     opacity: 0;

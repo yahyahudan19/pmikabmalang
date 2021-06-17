@@ -97,7 +97,6 @@ a {
 
 a:hover, a:active, a:focus {
   box-shadow: none;
-  color: #4f0f0f;
   outline: none;
   text-decoration: none;
 }
@@ -2883,18 +2882,18 @@ table p {
 }
 
 .section-py {
-  padding: 45px 0px 70px;
+  padding: 45px 0px 80px;
 }
 
 @media (max-width: 767px) {
   .section-py {
-    padding: 0px 0px 70px;
+    padding: 0px 0px 80px;
   }
 }
 
 @media (min-width: 768px) {
   .section-py {
-    padding: 45px 0px 100px;
+    padding: 45px 0px 90px;
   }
 }
 
@@ -2948,7 +2947,7 @@ table p {
 }
 
 .social-links li a:hover {
-  color: #ff6666;
+  color: #000;
 }
 
 .header-middle {
@@ -3043,7 +3042,7 @@ table p {
 }
 
 .media-heading:hover {
-  color: #ff6666;
+  color: #000;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -3054,6 +3053,9 @@ table p {
 
 @media screen and (min-width: 992px) {
   .media-heading {
+    color: #fff;
+  }
+  .media-heading:hover {
     color: #fff;
   }
 }
@@ -3069,7 +3071,7 @@ table p {
 }
 
 .book-now-btn:hover {
-  background: #ff6666;
+  background: #000;
   color: #fff;
 }
 
@@ -3090,25 +3092,38 @@ table p {
 }
 
 .main-menu li + li {
-  margin-left: 40px;
+  margin-left: 35px;
 }
 
 .main-menu li:hover .sub-menu {
-  top: 39px;
+  top: 100%;
   opacity: 1;
   visibility: visible;
 }
 
+.main-menu li.active .main-menu-link::before, .main-menu li:hover .main-menu-link::before {
+  width: 100%;
+}
+
 .main-menu .main-menu-link {
   font-family: "Sarabun", sans-serif;
+  display: block;
   font-weight: 700;
   font-size: 14px;
   color: #fff;
   text-transform: uppercase;
+  padding: 15px 5px;
 }
 
-.main-menu .main-menu-link:hover, .main-menu .main-menu-link.active {
-  color: #ff6666;
+.main-menu .main-menu-link::before {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  content: "";
+  transition: all 0.3s;
 }
 
 .sub-menu {
@@ -3117,7 +3132,8 @@ table p {
   top: 80px;
   display: flex;
   flex-direction: column;
-  background-color: #111;
+  background-color: #fff;
+  box-shadow: 0 2px 29px rgba(0, 0, 0, 0.05);
   padding: 15px 15px;
   min-width: 250px;
   z-index: 2;
@@ -3133,12 +3149,16 @@ table p {
 
 .sub-menu-link {
   padding: 5px 0px;
-  color: #fff;
+  color: #000;
   text-transform: capitalize;
 }
 
+.sub-menu-link:hover {
+  padding-left: 5px;
+}
+
 .sub-menu-link:hover, .sub-menu-link.active {
-  color: #ff6666;
+  color: #000;
 }
 
 .sticky-header {
@@ -3163,6 +3183,29 @@ table p {
   visibility: visible;
   animation: fadeInDown 0.5s ease-in-out;
   box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
+}
+
+.sticky-header.sticky .main-menu li .main-menu-link:hover {
+  color: #6d0101;
+}
+
+.sticky-header.sticky .main-menu li .main-menu-link::before {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #6d0101;
+  content: "";
+  transition: all 0.3s;
+}
+
+.sticky-header.sticky .main-menu li.active .main-menu-link, .sticky-header.sticky .main-menu li:hover .main-menu-link {
+  color: #6d0101;
+}
+
+.sticky-header.sticky .main-menu li.active .main-menu-link::before, .sticky-header.sticky .main-menu li:hover .main-menu-link::before {
+  width: 100%;
 }
 
 @media screen and (max-width: 991px) {
@@ -3385,7 +3428,7 @@ body.offcanvas-open {
 }
 
 .offcanvas .offcanvas-menu ul li a:hover {
-  color: #ff6666;
+  color: #6d0101;
 }
 
 .offcanvas .offcanvas-menu ul li .offcanvas-submenu {
@@ -3436,6 +3479,10 @@ body.offcanvas-open {
   background-color: #000;
 }
 
+.offcanvas .offcanvas-menu ul li .menu-expand::before:hover, .offcanvas .offcanvas-menu ul li .menu-expand::after:hover {
+  background-color: #8f1b1b;
+}
+
 .offcanvas .offcanvas-menu ul li .menu-expand::after {
   transform: rotate(90deg);
 }
@@ -3471,13 +3518,13 @@ body.offcanvas-open {
 
 .offcanvas-social a {
   color: #ffffff;
-  background: #ff6666;
+  background: #6d0101;
 }
 
 .offcanvas-social a:hover {
   background: transparent;
-  color: #ff6666;
-  border-color: #ff6666 !important;
+  color: #6d0101;
+  border-color: #6d0101 !important;
 }
 
 /******************************** 
@@ -3605,8 +3652,8 @@ body.offcanvas-open {
 }
 
 .btn-danger:hover {
-  background: #ff6666;
-  border-color: #ff6666;
+  background: #000;
+  border-color: #000;
 }
 
 .btn-outline-secondary {
@@ -3614,8 +3661,8 @@ body.offcanvas-open {
 }
 
 .btn-outline-secondary:hover {
-  background: #ff6666;
-  border-color: #ff6666;
+  background: #000;
+  border-color: #000;
 }
 
 .btn-outline-secondary:focus {
@@ -3628,7 +3675,7 @@ body.offcanvas-open {
   height: 60px;
   font-size: 25px;
   background: #fff;
-  color: #ff6666;
+  color: #000;
   opacity: 0;
   visibility: hidden;
   border-radius: 50%;
@@ -3637,7 +3684,7 @@ body.offcanvas-open {
 
 .hero-slider .swiper-button-prev:hover,
 .hero-slider .swiper-button-next:hover {
-  background: #ff6666;
+  background: #000;
   color: #fff;
 }
 
@@ -3906,7 +3953,19 @@ body.offcanvas-open {
 -----------------------------------------------------------------------
 */
 .static-media {
-  padding: 90px 0px;
+  padding-top: 90px;
+}
+
+@media only screen and (max-width: 575px) {
+  .static-media {
+    padding-top: 80px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .static-media {
+    padding-top: 80px;
+  }
 }
 
 .static-media .media {
@@ -4174,19 +4233,19 @@ body.offcanvas-open {
 
 @media only screen and (max-width: 1199px) {
   .team-area.team-default-area {
-    padding: 98px 0 92px;
+    padding: 90px 0px;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .team-area.team-default-area {
-    padding: 78px 0 72px;
+    padding: 80px 0px;
   }
 }
 
 @media only screen and (max-width: 575px) {
   .team-area.team-default-area {
-    padding: 68px 0 62px;
+    padding: 80px 0px;
   }
 }
 
@@ -4399,19 +4458,19 @@ body.offcanvas-open {
 
 @media only screen and (max-width: 1199px) {
   .pricing-area.pricing-default-area {
-    padding: 98px 0 0;
+    padding: 90px 0 0;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .pricing-area.pricing-default-area {
-    padding: 78px 0 0;
+    padding: 80px 0 0;
   }
 }
 
 @media only screen and (max-width: 575px) {
   .pricing-area.pricing-default-area {
-    padding: 68px 0 0;
+    padding: 80px 0 0;
   }
 }
 
@@ -4655,19 +4714,19 @@ body.offcanvas-open {
 
 @media only screen and (max-width: 1199px) {
   .testimonial-area.testimonial-default-area {
-    padding: 98px 0;
+    padding: 90px 0;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .testimonial-area.testimonial-default-area {
-    padding: 78px 0;
+    padding: 80px 0;
   }
 }
 
 @media only screen and (max-width: 575px) {
   .testimonial-area.testimonial-default-area {
-    padding: 68px 0;
+    padding: 80px 0;
   }
 }
 
@@ -4913,25 +4972,31 @@ body.offcanvas-open {
 -----------------------------------------------------------------------
 */
 .feature-section {
-  padding: 125px 0px;
+  padding: 125px 0px 180px;
   position: relative;
 }
 
-.feature-section .container {
-  z-index: 3;
-  position: relative;
-}
-
-@media (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .feature-section {
-    padding-top: 0px;
+    padding: 90px 0px 90px;
+  }
+}
+
+@media (max-width: 991px) {
+  .feature-section {
+    padding: 90px 0px 90px;
   }
 }
 
 @media (max-width: 767px) {
   .feature-section {
-    padding-bottom: 80px;
+    padding: 80px 0px 80px;
   }
+}
+
+.feature-section .container {
+  z-index: 3;
+  position: relative;
 }
 
 .feature-section .section-title {
@@ -5147,7 +5212,7 @@ body.offcanvas-open {
 
 .icon-box-style .icon-box-item {
   display: flex;
-  margin-bottom: 95px;
+  margin-bottom: 70px;
   position: relative;
 }
 
@@ -6639,7 +6704,7 @@ body.offcanvas-open {
 
 @media only screen and (max-width: 1199px) {
   .blog-area.blog-default-area {
-    padding: 100px 0px;
+    padding: 90px 0px;
   }
 }
 
@@ -6651,7 +6716,7 @@ body.offcanvas-open {
 
 @media only screen and (max-width: 575px) {
   .blog-area.blog-default-area {
-    padding: 45px 0 70px;
+    padding: 60px 0 80px;
   }
 }
 
@@ -7685,19 +7750,19 @@ body.offcanvas-open {
 
 @media only screen and (max-width: 1199px) {
   .footer-area {
-    padding: 68px 0 0;
+    padding: 90px 0 0;
   }
 }
 
 @media only screen and (max-width: 991px) {
   .footer-area {
-    padding: 98px 0 0;
+    padding: 90px 0 0;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .footer-area {
-    padding: 73px 0 0;
+    padding: 80px 0 0;
   }
 }
 
@@ -7750,13 +7815,13 @@ body.offcanvas-open {
 
 @media only screen and (max-width: 767px) {
   .footer-area .about-widget {
-    margin-bottom: 55px;
+    margin-bottom: 65px;
   }
 }
 
 @media only screen and (max-width: 575px) {
   .footer-area .about-widget {
-    margin-bottom: 45px;
+    margin-bottom: 65px;
   }
 }
 
@@ -7989,14 +8054,14 @@ body.offcanvas-open {
 }
 
 .footer-area .footer-bottom {
-  margin-top: 125px;
+  margin-top: 105px;
   padding: 55px 0;
   position: relative;
 }
 
 @media only screen and (max-width: 1199px) {
   .footer-area .footer-bottom {
-    margin-top: 55px;
+    margin-top: 70px;
   }
 }
 

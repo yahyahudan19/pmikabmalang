@@ -7,13 +7,13 @@
   &.testimonial-default-area {
     padding: 125px 0px;
     @media #{$lg-device} {
-      padding: 98px 0;
+      padding: 90px 0;
     }
     @media #{$sm-device} {
-      padding: 78px 0;
+      padding: 80px 0;
     }
     @media #{$xs-device} {
-      padding: 68px 0;
+      padding: 80px 0;
     }
     .section-title {
       margin-bottom: 100px;

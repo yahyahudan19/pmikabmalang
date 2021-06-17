@@ -32,7 +32,7 @@
       font-size: 16px;
       color: $white;
       &:hover {
-        color: #ff6666;
+        color: #000;
       }
     }
   }
@@ -68,8 +68,6 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  
-  
 }
 
 .media-list {
@@ -116,7 +114,7 @@
   line-height: 1;
   text-transform: uppercase;
   &:hover {
-    color: #ff6666;
+    color: #000;
   }
   @media #{$xl-device} {
     font-size: 18px;
@@ -124,6 +122,9 @@
 
   @include min-screen(992) {
     color: #fff;
+    &:hover {
+      color: #fff;
+    }
   }
 }
 
@@ -136,7 +137,7 @@
   background: #6d0101;
   display: inline-block;
   &:hover {
-    background: #ff6666;
+    background: #000;
     color: #fff;
   }
 
@@ -157,27 +158,43 @@
   li {
     position: relative;
     & + li {
-      margin-left: 40px;
+      margin-left: 35px;
     }
 
     &:hover {
       .sub-menu {
-        top: 39px;
+        top: 100%;
         opacity: 1;
         visibility: visible;
+      }
+    }
+    &.active,
+    &:hover {
+      .main-menu-link {
+        &::before {
+          width: 100%;
+        }
       }
     }
   }
   .main-menu-link {
     font-family: "Sarabun", sans-serif;
+    display: block;
     font-weight: 700;
     font-size: 14px;
     color: #fff;
     text-transform: uppercase;
+    padding: 15px 5px;
 
-    &:hover,
-    &.active {
-      color: #ff6666;
+    &::before {
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: #fff;
+      content: "";
+      transition: all 0.3s;
     }
   }
 }
@@ -188,7 +205,8 @@
   top: 80px;
   display: flex;
   flex-direction: column;
-  background-color: #111;
+  background-color: #fff;
+  box-shadow: 0 2px 29px rgba(0, 0, 0, 0.05);
   padding: 15px 15px;
   min-width: 250px;
   z-index: 2;
@@ -203,11 +221,14 @@
   }
   &-link {
     padding: 5px 0px;
-    color: #fff;
+    color: #000;
     text-transform: capitalize;
+    &:hover {
+      padding-left: 5px;
+    }
     &:hover,
     &.active {
-      color: #ff6666;
+      color: #000;
     }
   }
 }
@@ -233,6 +254,37 @@
   visibility: visible;
   animation: fadeInDown 0.5s ease-in-out;
   box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
+
+  .main-menu {
+    li {
+      .main-menu-link {
+        &:hover {
+          color: #6d0101;
+        }
+
+        &::before {
+          position: absolute;
+          bottom: 0px;
+          left: 0;
+          width: 0%;
+          height: 2px;
+          background: #6d0101;
+          content: "";
+          transition: all 0.3s;
+        }
+      }
+
+      &.active,
+      &:hover {
+        .main-menu-link {
+          color: #6d0101;
+          &::before {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
 }
 
 .mobile-sticky.sticky {

@@ -7,13 +7,13 @@
   &.team-default-area {
     padding: 125px 0px;
     @media #{$lg-device} {
-      padding: 98px 0 92px;
+      padding: 90px 0px;
     }
     @media #{$sm-device} {
-      padding: 78px 0 72px;
+      padding: 80px 0px;
     }
     @media #{$xs-device} {
-      padding: 68px 0 62px;
+      padding: 80px 0px;
     }
     .section-title {
       margin-bottom: 64px;
