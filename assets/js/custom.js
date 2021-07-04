@@ -297,7 +297,7 @@
       } else {
         $(".sticky-header").removeClass("sticky");
         $(".mobile-sticky").removeClass("sticky");
-        $(".sticky-img").attr("src", "assets/img/logo.png");
+        $(".sticky-img").attr("src", "assets/img/logopmi.png");
       }
     }
   });
